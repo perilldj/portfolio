@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; 
+    background-color: #d5d5d5;
+}
+
+.front-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1e2044;
+    color: #f0f0f0;
+}
+
+.front-page h1 {
+    font-family: "Consolas", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #ececec;
+    height: 100px;
+}
+
+.front-page h3 {
+    font-family: "Consolas", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #76abb3;
+    height: 0px;
+}
+
+#arrowAnim {
+    position: absolute;
+    margin-top: 300px;
+    bottom: 1;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border: 12px solid;
+    border-color: rgb(255, 255, 255) transparent transparent rgb(0, 0, 0);
+    transform: rotate(-135deg);
+}
+
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite;
+    animation: slide 4s linear infinite;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateY(-100px); }	
+   20% { opacity:1; transform: translateY(-50px); }	
+   80% { opacity:1; transform: translateY(50px); }	
+  100% { opacity:0; transform: translateY(90px); }	
+}
+
+@keyframes slide {
+    0% { opacity:0; transform: translateY(-100px); }	
+   20% { opacity:1; transform: translateY(-50px); }	
+   80% { opacity:1; transform: translateY(50px); }	
+  100% { opacity:0; transform: translateY(90px); }	
+}
+
+/* AboutMe.css */
+.about-me-section {
+    background-color: #f8f8f8;
+    padding: 75px 20px;
+    text-align: center;
+  }
+  
+  .about-me-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me-image {
+    flex: 2;
+    margin-right: 100px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .about-me-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+@media screen and (max-width: 900px) {
+  .about-me-image {
+      display: none;
+    }
+}
+
+  .about-me-text {
+    flex: 2;
+  }
+  
+  .about-me-text h2 {
+    font-family: "Consolas", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .about-me-text p {
+    font-family: "Consolas", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+h1 {
+    color:#1e2044;
+    font: 32px;
+    text-align: center;
+}
